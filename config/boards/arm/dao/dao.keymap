@@ -15,7 +15,7 @@
 
 &lt { quick_tap_ms = <200>; };
 &mt { quick_tap_ms = <200>; };
-gdgdgddg
+
 /
  {
     behaviors {
@@ -43,14 +43,8 @@ gdgdgddg
 
             paste {
                 bindings = <&paste_behavior>;
-                key-positions = <16 18>;
-            };
-
-            test {
-                bindings = <&kp V>;
                 key-positions = <4 5>;
             };
-
         };
     keymap {
                 compatible = "zmk,keymap";
