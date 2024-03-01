@@ -17,6 +17,19 @@
 &mt { quick_tap_ms = <200>; };
 
 /
+    combos {
+            compatible = "zmk,combos";
+
+            copy {
+                bindings = <&copy_behavior>;
+                key-positions = <16 17>;
+            };
+
+            paste {
+                bindings = <&paste_behavior>;
+                key-positions = <4 5>;
+            };
+        };
  {
     behaviors {
         copy_behavior: copy_behavior {
@@ -33,19 +46,7 @@
             bindings = <&kp V>, <&kp LG(V)>;
         };
     };
-    combos {
-            compatible = "zmk,combos";
 
-            copy {
-                bindings = <&copy_behavior>;
-                key-positions = <16 17>;
-            };
-
-            paste {
-                bindings = <&paste_behavior>;
-                key-positions = <4 5>;
-            };
-        };
     keymap {
                 compatible = "zmk,keymap";
 
