@@ -37,12 +37,12 @@
             compatible = "zmk,combos";
 
             copy {
-                bindings = <&copy_behavior>;
+                bindings = <&kp LG(C)>;
                 key-positions = <27 37>;
             };
 
             paste {
-                bindings = <&paste_behavior>;
+                bindings = <&kp LG(V)>;
                 key-positions = <37 28>;
             };
         };
