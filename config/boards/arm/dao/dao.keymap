@@ -46,9 +46,7 @@
                 key-positions = <37 28>;
             };
         };
-
-{
-        keymap {
+    keymap {
                 compatible = "zmk,keymap";
 
                 default_layer {
