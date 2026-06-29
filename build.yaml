@@ -9,5 +9,5 @@ include:
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
     artifact-name: dao_right_studio
-  - board: nice_nano_v2
+  - board: nice_nano
     shield: settings_reset
