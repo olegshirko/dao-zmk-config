@@ -74,8 +74,12 @@ The `settings_reset` target produces a UF2 that clears Bluetooth pairings on a `
   - Describes 42 key positions arranged in four rows with split thumb clusters.
 
 - `config/west.yml`
-  - Pins the `zmkfirmware/zmk` repo at the `main` branch.
+  - Pins the `zmkfirmware/zmk` repo at the `v0.3.0` release for build stability.
   - Pins `ergonautkb/ergonautkb-zmk-module` at the `main` branch.
+
+- `.github/workflows/build.yml`
+  - Uses the reusable `zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3.0` workflow.
+  - Pinned together with `west.yml` to avoid breaking changes from ZMK `main` (e.g., Zephyr 4.1 board-revision changes).
 
 ## Development conventions
 
