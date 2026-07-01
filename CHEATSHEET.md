@@ -62,7 +62,7 @@
 | `MAIN` | по умолчанию | QWERTY, модификаторы, Command на `Space` |
 | `MAC` | зажать `LWR` (внутренние большие пальцы: `Ret` слева, `Esc` справа) | символы, цифры, macOS-шорткаты (копировать/вставить, Spotlight, Back/Forward) |
 | `DEV` | зажать `RSE` (наружные большие пальцы: `Tab` слева, `Del` справа) | терминал, GoLand, стрелки, медиа |
-| `ADJ` | из `MAC`/`DEV` через `Tab`/`Del`/`Ret`/`Esc` | Bluetooth, bootloader, reset |
+| `ADJ` | из `MAC`/`DEV` через `Tab`/`Del`/`Ret`/`Esc` | слева — Bluetooth, bootloader, reset; справа — нумпад (цифры и операторы) |
 
 ### Важно про слои
 
@@ -108,6 +108,23 @@
 - `Gui+Alt+L` — Reformat code.
 - `Gui+Shift+A` — Find Action.
 - Стрелки, Home/End, PgUp/PgDn — правая сторона `DEV`.
+
+## ADJ-слой — нумпад
+
+Правая половина `ADJ` превращается в цифровой блок:
+
+```
+7   8   9   -   /   *
+4   5   6   +   1   2
+0   3   .   =   Ent
+```
+
+Также цифры и операторы дублированы на правых больших пальцах:
+- внутренний палец — `0`
+- средний — `.`
+- наружный — `Enter`
+
+Левая половина `ADJ` осталась системной: Bluetooth, bootloader, reset, studio unlock.
 
 ## ZMK Studio
 

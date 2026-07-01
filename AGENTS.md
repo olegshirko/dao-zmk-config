@@ -60,7 +60,7 @@ The `settings_reset` target produces a UF2 that clears Bluetooth pairings on a `
   - `MAIN`: QWERTY with positional home-row mods (`A`=Ctrl, `S`=Alt, `F`=Shift, `J`=Shift, `L`=Alt, `;`=Ctrl) and `Command` on the left thumb (`Space` hold). The outer top keys are plain `]` and `[`. A combo `, + .` switches the macOS input source (`Ctrl+Space`).
   - `MAC`: symbols/numbers on the left, one-handed macOS shortcuts on the right (Cut/Copy/Paste/Undo/Redo/Select All, Spotlight, App/Window switcher, Back/Forward, Find Action).
   - `DEV`: terminal and JetBrains GoLand shortcuts on the left, arrow navigation and media keys on the right.
-  - `ADJ`: Bluetooth profile selection, bootloader, studio unlock, system reset.
+  - `ADJ`: left half — Bluetooth profile selection, bootloader, studio unlock, system reset; right half — numpad layer with digits and operators.
   - Uses custom positional hold-tap behaviors `lmt` (left_mod_tap) and `rmt` (right_mod_tap) for the home-row modifiers, plus `&mt`, `&lt`, `&kp`, `&trans`, `&bt`, `&bootloader`, `&sys_reset`, `&studio_unlock`.
   - Selects the physical layout via the `zmk,physical_layout` chosen node (`dao_crkbd_layout` by default; `dao_full_layout` is commented out).
   - Includes `behaviors.dtsi`, `dt-bindings/zmk/bt.h`, and `dt-bindings/zmk/keys.h`.
