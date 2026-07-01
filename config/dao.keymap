@@ -16,8 +16,8 @@
 &lt { quick_tap_ms = <200>; };
 
 &mt {
-    flavor = "balanced";
-    tapping_term_ms = <200>;
+    flavor = "tap-preferred";
+    tapping_term_ms = <220>;
     quick_tap_ms = <200>;
     require-prior-idle-ms = <125>;
 };
@@ -59,16 +59,28 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        combo_lang {
+            timeout-ms = <50>;
+            key-positions = <32 33>;
+            bindings = <&kp LC(SPACE)>;
+        };
+    };
+};
+
+/ {
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             display-name = "MAIN";
             bindings = <
-&mt LGUI RBKT    &kp Q       &kp W       &kp E        &kp R             &kp T        &kp Y        &kp U             &kp I          &kp O       &kp P      &mt RGUI LBKT
+&kp RBKT         &kp Q       &kp W       &kp E        &kp R             &kp T        &kp Y        &kp U             &kp I          &kp O       &kp P      &kp LBKT
 &kp GRAVE        &lmt LCTRL A &lmt LALT S  &kp D        &lmt LSHIFT F     &kp G        &kp H        &rmt RSHIFT J     &kp K          &rmt RALT L &rmt RCTRL SEMI &kp SQT
 &kp MINUS        &kp Z       &kp X       &kp C        &kp V             &kp B        &kp N        &kp M             &kp COMMA      &kp DOT     &kp FSLH   &kp BSLH
-                                          &lt RSE TAB  &mt LSHFT SPACE   &lt LWR RET  &lt LWR ESC  &kp BACKSPACE     &lt RSE DELETE
+                                          &lt RSE TAB  &mt LGUI SPACE    &lt LWR RET  &lt LWR ESC  &kp BACKSPACE     &lt RSE DELETE
             >;
         };
 
