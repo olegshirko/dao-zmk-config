@@ -80,7 +80,7 @@
 &kp RBKT         &kp Q       &kp W       &kp E        &kp R             &kp T        &kp Y        &kp U             &kp I          &kp O       &kp P      &kp LBKT
 &kp GRAVE        &lmt LCTRL A &lmt LALT S  &kp D        &lmt LSHIFT F     &kp G        &kp H        &rmt RSHIFT J     &kp K          &rmt RALT L &rmt RCTRL SEMI &kp SQT
 &kp MINUS        &kp Z       &kp X       &kp C        &kp V             &kp B        &kp N        &kp M             &kp COMMA      &kp DOT     &kp FSLH   &kp BSLH
-                                          &lt RSE TAB  &mt LGUI SPACE    &lt LWR RET  &lt LWR ESC  &kp BACKSPACE     &lt RSE DELETE
+                                          &lt RSE TAB  &kp SPACE         &lt LWR RET  &mt RGUI ESC   &kp BACKSPACE     &lt RSE DELETE
             >;
         };
 

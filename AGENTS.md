@@ -57,7 +57,7 @@ The `settings_reset` target produces a UF2 that clears Bluetooth pairings on a `
 
 - `config/dao.keymap`
   - Defines four layers (`DEF`, `LWR`, `RSE`, `ADJ`) with display names `MAIN`, `MAC`, `DEV`, `ADJ`.
-  - `MAIN`: QWERTY with positional home-row mods (`A`=Ctrl, `S`=Alt, `F`=Shift, `J`=Shift, `L`=Alt, `;`=Ctrl) and `Command` on the left thumb (`Space` hold). The outer top keys are plain `]` and `[`. A combo `, + .` switches the macOS input source (`Ctrl+Space`).
+  - `MAIN`: QWERTY with positional home-row mods (`A`=Ctrl, `S`=Alt, `F`=Shift, `J`=Shift, `L`=Alt, `;`=Ctrl) and `Command` on the right inner thumb (`Esc` hold). The outer top keys are plain `]` and `[`. A combo `, + .` switches the macOS input source (`Ctrl+Space`).
   - `MAC`: symbols/numbers on the left, one-handed macOS shortcuts on the right (Cut/Copy/Paste/Undo/Redo/Select All, Spotlight, App/Window switcher, Back/Forward, Find Action).
   - `DEV`: terminal and JetBrains GoLand shortcuts on the left, arrow navigation and media keys on the right.
   - `ADJ`: left half — Bluetooth profile selection, bootloader, studio unlock, system reset; right half — numpad layer with digits and operators.
